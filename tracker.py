@@ -12,9 +12,7 @@ hands = mp_hands.Hands(
     min_detection_confidence=0.7,
     min_tracking_confidence=0.7
 )
-
 cap = cv2.VideoCapture(0, cv2.CAP_AVFOUNDATION)
-
 while cap.isOpened():
     success, frame = cap.read()
     if not success:
